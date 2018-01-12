@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1515748229 source:c:\users\benjamin\desktop\projet_c\projet_c\main.c
+	<stdlib.h>
+	<gtk/gtk.h>
+	<stdio.h>
+
