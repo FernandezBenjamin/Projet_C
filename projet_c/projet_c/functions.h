@@ -1,10 +1,10 @@
 
-#include <gtk/gtk.h>
 
+#include <gtk/gtk.h>
 #ifndef FUNCTIONS_H_INCLUDED
 #define FUNCTIONS_H_INCLUDED
 
-void signScreen(GtkWidget *window);
+
 
 
 

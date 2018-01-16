@@ -1,6 +1,10 @@
 # depslib dependency file v1.0
-1515762460 source:c:\users\benjamin\desktop\projet_c\projet_c\main.c
+1516106657 source:c:\users\benjamin\desktop\projet_c\projet_c\main.c
+	<windows.h>
 	<stdlib.h>
 	<gtk/gtk.h>
 	<stdio.h>
+	<string.h>
+	<winsock.h>
+	<mysql.h>
 

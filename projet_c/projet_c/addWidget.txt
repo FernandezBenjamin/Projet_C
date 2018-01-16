@@ -1,0 +1,30 @@
+
+void addWidget(WidgetList *list, WidgetElement *widget, int type){
+
+
+    /* On crée un nouvel élément */
+    WidgetElement* newWidget = (WidgetElement *)malloc(sizeof(WidgetElement));
+
+    /* On assigne la valeur au nouvel élément */
+    newWidget->widget = widget;
+    newWidget->type = type;
+
+    /* On ajoute en fin, donc aucun élément ne va suivre */
+    newWidget->next = NULL;
+
+    if(list == NULL){
+
+        /* Si la liste est videé il suffit de renvoyer l'élément créé */
+        list->first = newWidget;
+    } else {
+
+        /* Sinon, on parcourt la liste à l'aide d'un pointeur temporaire et on
+        indique que le dernier élément de la liste est relié au nouvel élément */
+        WidgetElement* temp = list->first;
+        while(temp->next != NULL){
+
+            temp = temp->next;
+        }
+        temp->next = newWidget;
+    }
+}
